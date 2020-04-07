@@ -14,5 +14,7 @@ public class MyObject {
         System.out.println(myObj.getClass().getClassLoader().getParent());  //ExtClassLoader    扩展类加载器
         System.out.println(myObj.getClass().getClassLoader());  //AppClassLoader 应用程序类加载器
 
+        Thread thread = new Thread();
+        thread.start();
     }
 }
