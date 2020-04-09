@@ -23,6 +23,9 @@ public class CountDownLatchDemo {
         System.out.println(Thread.currentThread().getName() + "\t 关灯锁门，离开自习室");
     }
 
+    /*
+    * 失败Case
+    * */
     private static void closeDoor() {
         for(int i=1; i<=6; i++) {
             new Thread(() -> {
