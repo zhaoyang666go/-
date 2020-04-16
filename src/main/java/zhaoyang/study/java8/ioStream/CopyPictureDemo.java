@@ -8,7 +8,7 @@ import java.io.IOException;
 * 复制图片
 * 一读一写
 * */
-public class copyPictureDemo {
+public class CopyPictureDemo {
     private static String pathFrom = "G:\\picture\\cat.gif";
     private static String pathTo = "src\\testFiles\\cat.gif";
 

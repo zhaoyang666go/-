@@ -3,7 +3,7 @@ package zhaoyang.study.java8.ioStream;
 import java.io.FileWriter;
 import java.io.IOException;
 
-public class tryCatchDemo {
+public class TryCatchDemo {
     private static String path = "src\\testFiles\\c.txt";
 
     public static void main(String[] args) throws IOException {
@@ -11,7 +11,7 @@ public class tryCatchDemo {
         
 //        tryCatch02();
 
-        tryCatch03();
+//        tryCatch03();
     }
 
     /*
@@ -20,16 +20,16 @@ public class tryCatchDemo {
     * try后边()内直接引入流对象
     * try代码执行完毕，自动释放资源，不需要finally释放
     * */
-    private static void tryCatch03() throws IOException {
+    /*private static void tryCatch03() throws IOException {
         FileWriter fw = new FileWriter(path, true);
-        try(fw) {   //JDK8不支持
+        try(fw) {   //JDK8不支持，抛异常
             for (int i=1; i<=5; i++) {
                 fw.write("深深的水，静静的流" + i + "\r\n");
             }
         } catch (IOException e) {
             System.out.println(e);
         }
-    }
+    }*/
 
     /*
     * JDK7新特性
