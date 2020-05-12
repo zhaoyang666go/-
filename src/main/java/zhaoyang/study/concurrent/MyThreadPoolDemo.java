@@ -36,10 +36,10 @@ public class MyThreadPoolDemo {
 
     /*
     * 仅用于熟悉API
-    * 实际开发中，一般使用 ThreadPoolExecutor 自定义线程池
+    * 实际开发中，一般使用ThreadPoolExecutor自定义线程池
     * */
     private static void initThreadPool() {
-        //        ExecutorService threadPool = Executors.newFixedThreadPool(5);   //一池5个受理线程
+//        ExecutorService threadPool = Executors.newFixedThreadPool(5);   //一池5个受理线程
 //        ExecutorService threadPool = Executors.newSingleThreadExecutor();   //池中只有一个工作线程
         ExecutorService threadPool = Executors.newCachedThreadPool();   //一池n线程，可扩容
 

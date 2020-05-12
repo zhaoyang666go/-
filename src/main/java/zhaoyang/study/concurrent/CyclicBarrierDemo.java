@@ -16,6 +16,7 @@ public class CyclicBarrierDemo {
         for (int i=1; i<=7; i++) {
             new Thread(() -> {
                 System.out.println(Thread.currentThread().getName() + "\t 到!");
+
                 try {
                     cyclicBarrier.await();  //人没到齐就等待
                 } catch (InterruptedException e) {

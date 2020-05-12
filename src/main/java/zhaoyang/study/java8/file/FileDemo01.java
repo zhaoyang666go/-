@@ -13,7 +13,7 @@ public class FileDemo01 {
     }
 
     private static void show03() {
-        File parent = new File("C:\\");
+        File parent = new File("I:\\");
         File file = new File(parent, "file.java");
         System.out.println(file);
     }
@@ -24,7 +24,7 @@ public class FileDemo01 {
     }
 
     private static void show01(){
-        File f1 = new File("C:\\Users\\86151\\Desktop\\a.txt");
+        File f1 = new File("C:\\Users\\86151\\Desktop\\a.txt"); //绝对路径
         System.out.println(f1);   //File重写了Object的toStirng方法
 
         File f2 = new File("b.txt");    //相对于当前项目路径

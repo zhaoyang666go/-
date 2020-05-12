@@ -21,7 +21,6 @@ class Zi extends Fu {
     }
 
     //子类重写父类方法时，抛出父类异常的子类
-
     @Override
     public void show02() throws ArrayIndexOutOfBoundsException {
         super.show02();
