@@ -64,7 +64,7 @@ class MyData{
         number++;
     }
 
-    AtomicInteger atomicInteger = new AtomicInteger();
+    AtomicInteger atomicInteger = new AtomicInteger();  //初始值默认是0
     public void addAtomic(){
         atomicInteger.getAndIncrement();    //获取当前值并加1；
     }
