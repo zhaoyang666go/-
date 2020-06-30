@@ -1,7 +1,5 @@
-package zhaoyang.study.collection.arrayList;
+package zhaoyang.study.java8.collection.arrayList;
 
-import java.util.Collections;
-import java.util.HashSet;
 import java.util.Set;
 import java.util.UUID;
 import java.util.concurrent.CopyOnWriteArraySet;

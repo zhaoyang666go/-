@@ -1,4 +1,4 @@
-package zhaoyang.study.collection.arrayList;
+package zhaoyang.study.java8.collection.arrayList;
 
 import java.util.*;
 import java.util.concurrent.CopyOnWriteArrayList;

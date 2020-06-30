@@ -1,4 +1,4 @@
-package zhaoyang.study.concurrent;
+package zhaoyang.study.java8.concurrent;
 
 /*
 * 多线程：线程 操作 资源类

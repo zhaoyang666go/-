@@ -1,4 +1,4 @@
-package zhaoyang.study.concurrent;
+package zhaoyang.study.java8.concurrent;
 
 import java.util.concurrent.BrokenBarrierException;
 import java.util.concurrent.CyclicBarrier;

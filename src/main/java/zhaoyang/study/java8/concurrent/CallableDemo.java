@@ -1,4 +1,4 @@
-package zhaoyang.study.concurrent;
+package zhaoyang.study.java8.concurrent;
 
 import java.util.concurrent.Callable;
 import java.util.concurrent.ExecutionException;

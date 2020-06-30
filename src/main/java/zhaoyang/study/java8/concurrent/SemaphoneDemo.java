@@ -1,4 +1,4 @@
-package zhaoyang.study.concurrent;
+package zhaoyang.study.java8.concurrent;
 
 import java.util.concurrent.Semaphore;
 import java.util.concurrent.TimeUnit;

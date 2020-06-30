@@ -1,4 +1,4 @@
-package zhaoyang.study.collection.properties;
+package zhaoyang.study.java8.collection.properties;
 
 import java.io.FileReader;
 import java.io.FileWriter;

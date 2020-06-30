@@ -1,4 +1,4 @@
-package zhaoyang.study.concurrent;
+package zhaoyang.study.java8.concurrent;
 
 /*
 * 多个线程同时读一个资源类没有任何问题，为了满足并发量，读取共享资源应该可以同时进行
