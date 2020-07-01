@@ -10,12 +10,12 @@ import java.util.Map;
 import java.util.concurrent.locks.ReadWriteLock;
 import java.util.concurrent.locks.ReentrantReadWriteLock;
 
-class MyCache {
+class MyCache { //资源类
     private volatile Map<String, Object> map = new HashMap<>();
     private ReadWriteLock readWriteLock = new ReentrantReadWriteLock();
 
-    public void put(String key, Object value){
-        readWriteLock.writeLock().lock();
+    public void put(String key, Object value){  //写入缓存
+        readWriteLock.writeLock().lock();   //写锁
         try {
             System.out.println(Thread.currentThread().getName() + "\t 开始写入 \t" + key);
             try {
@@ -30,8 +30,8 @@ class MyCache {
         }
     }
 
-    public void get(String key){
-        readWriteLock.readLock().lock();
+    public void get(String key){    //获取缓存
+        readWriteLock.readLock().lock();    //读锁
         try {
             System.out.println(Thread.currentThread().getName() + "\t 开始读取");
             try {
@@ -49,16 +49,16 @@ class MyCache {
 
 public class ReadWriteLockDemo {
     public static void main(String[] args) {
-        MyCache myCache = new MyCache();
+        MyCache myCache = new MyCache();    //资源类
 
-        for (int i=1; i<=5; i++) {
+        for (int i=1; i<=5; i++) {  //5个线程写
             final int tempInt = i;
             new Thread(() -> {
                 myCache.put(tempInt+"", tempInt+"");
             }, String.valueOf(i)).start();
         }
 
-        for (int i=1; i<=5; i++) {
+        for (int i=1; i<=5; i++) {  //5个线程读
             final int tempInt = i;
             new Thread(() -> {
                 myCache.get(tempInt+"");
