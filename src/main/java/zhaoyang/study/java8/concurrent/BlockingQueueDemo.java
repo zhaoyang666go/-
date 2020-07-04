@@ -65,7 +65,7 @@ public class BlockingQueueDemo {
         System.out.println(blockingQueue.poll());
     }
 
-    private static void addAndRemove() {
+    private static void addAndRemove() {    //执行失败抛异常
         BlockingQueue<String> blockingQueue = new ArrayBlockingQueue<>(3);
 
         //可添加相同的元素，因为底层是数组
