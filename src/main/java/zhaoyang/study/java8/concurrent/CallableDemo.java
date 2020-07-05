@@ -13,6 +13,11 @@ class MyThread implements Callable<Integer> {
     }
 }
 
+/*
+* FutureTask实现RunnableFuture接口
+* RunnableFuture接口实现Runnable接口
+* FutureTask类的构造方法可以传入一个实现Callable接口的对象
+* */
 public class CallableDemo {
     public static void main(String[] args) throws ExecutionException, InterruptedException {
 //        Thread thread = new Thread();

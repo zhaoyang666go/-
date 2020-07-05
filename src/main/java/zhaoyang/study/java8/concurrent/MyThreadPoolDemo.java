@@ -25,12 +25,12 @@ public class MyThreadPoolDemo {
 
         try {
             for (int i=1; i<=10; i++) {
-                threadPool.execute(() -> {
+                threadPool.execute(() -> {  //使用
                     System.out.println(Thread.currentThread().getName() + "\t 办理业务");
                 });
             }
         } finally {
-            threadPool.shutdown();
+            threadPool.shutdown();  //关闭
         }
     }
 
