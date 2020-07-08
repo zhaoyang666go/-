@@ -1,4 +1,4 @@
-package zhaoyang.study.java8.exception;
+package zhaoyang.study.java8.Throwable.exception;
 
 /*
 * 子父类异常

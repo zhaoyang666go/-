@@ -1,4 +1,4 @@
-package zhaoyang.study.java8.exception;
+package zhaoyang.study.java8.Throwable.exception;
 
 public class MyException extends Exception{
     //无参构造方法
