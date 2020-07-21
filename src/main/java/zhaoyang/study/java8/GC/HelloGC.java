@@ -1,4 +1,4 @@
-package zhaoyang.study.java8.JVMParam;
+package zhaoyang.study.java8.GC;
 
 /**
  * @author zhaoyang
