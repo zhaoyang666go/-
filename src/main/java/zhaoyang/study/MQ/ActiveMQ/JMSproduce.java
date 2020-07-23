@@ -23,8 +23,11 @@ public class JMSproduce {
         Session session = connection.createSession(false, Session.AUTO_ACKNOWLEDGE);
         //创建目的地：队列还是主题
         Queue queue = session.createQueue(QUEUE_NAME);
-        //创建消息生产者
+        //创建消息生产者，默认消息生产者传送的消息是持久化的
         MessageProducer messageProducer = session.createProducer(queue);
+//        messageProducer.setDeliveryMode(DeliveryMode.NON_PERSISTENT);   //消息非持久化，服务器宕机，消息丢失
+//        messageProducer.setDeliveryMode(DeliveryMode.PERSISTENT);   //消息持久化，服务器宕机，消息依然存在
+
         //消息生产者发送消息到目的地队列
         for (int i = 1; i <= 3; i++) {
             TextMessage textMessage = session.createTextMessage("Message---" + i);

@@ -3,7 +3,7 @@ package zhaoyang.study.java8.ioStream;
 import java.io.*;
 
 /*
-* 转换流
+* 转换流：编码格式
 * */
 public class ConversionStreamDemo {
     private static String path = "src\\testFiles\\g.txt";
