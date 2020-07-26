@@ -11,7 +11,7 @@ import java.util.concurrent.atomic.AtomicReference;
  * 好处：循环尝试获取资源，不阻塞
  */
 public class SpinLockDemo {
-    AtomicReference<Thread> atomicThread = new AtomicReference<>(); //原子引用线程，初试值为null
+    AtomicReference<Thread> atomicThread = new AtomicReference<>(); //原子引用线程，初始值为null
 
     public void myLock(){
         Thread thread = Thread.currentThread(); //当前线程
@@ -32,7 +32,7 @@ public class SpinLockDemo {
         SpinLockDemo spinLockDemo = new SpinLockDemo();
 
         new Thread(() -> {
-            spinLockDemo.myLock();
+            spinLockDemo.myLock();  //尝试获取锁
             try {
                 TimeUnit.SECONDS.sleep(3);  //暂停3s
             } catch (InterruptedException e) {

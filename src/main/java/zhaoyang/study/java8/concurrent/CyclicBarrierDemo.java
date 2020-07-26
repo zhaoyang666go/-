@@ -27,7 +27,9 @@ public class CyclicBarrierDemo {
                 } catch (InterruptedException e) {
                     e.printStackTrace();
                 }
+
                 System.out.println(Thread.currentThread().getName() + "\t 收集到" + temp + "星球");
+
                 try {
                     cyclicBarrier.await();
                 } catch (InterruptedException e) {

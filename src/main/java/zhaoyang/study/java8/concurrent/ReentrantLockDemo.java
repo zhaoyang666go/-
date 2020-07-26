@@ -11,23 +11,23 @@ import java.util.concurrent.locks.ReentrantLock;
  */
 
 class Phone02{
-    public synchronized void sendSMS() throws Exception{
+    public synchronized void sendSMS() throws Exception{    //同步方法
         System.out.println(Thread.currentThread().getId() + "\t invoked sendSMS()");
-        sendEmail();
+        sendEmail();    //调用另一个同步方法
     }
 
-    public synchronized void sendEmail() throws Exception{
+    public synchronized void sendEmail() throws Exception{  //同步方法
         System.out.println(Thread.currentThread().getId() + "\t invoked sendEmail()");
     }
 }
 
 class Phone03 implements Runnable{
-    public synchronized void sendSMS() throws Exception{
+    public synchronized void sendSMS() throws Exception{    //同步方法
         System.out.println(Thread.currentThread().getId() + "\t invoked sendSMS()");
-        sendEmail();
+        sendEmail();    //调用另一个同步方法
     }
 
-    public synchronized void sendEmail() throws Exception{
+    public synchronized void sendEmail() throws Exception{  //同步方法
         System.out.println(Thread.currentThread().getId() + "\t invoked sendEmail()");
     }
 
@@ -65,9 +65,9 @@ class Phone03 implements Runnable{
 
 public class ReentrantLockDemo {
     public static void main(String[] args) {
-//        testSync();
+        testSync();
 
-        testReentrantLock();
+//        testReentrantLock();
     }
 
     /*测试ReentrantLock是可重入锁*/
